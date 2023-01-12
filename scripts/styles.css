@@ -1,0 +1,11 @@
+.output {
+    font-size: 2rem;
+    background-color: aquamarine;
+
+    color: white;
+
+    position: absolute;
+    top: 100;
+    left: 0;
+    width: 100%;
+}

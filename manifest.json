@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Blue Background",
+    "version": "0.1",
+    "description": "Changes all website backgrounds to blue",
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["scripts/content.js"],
+        "css": ["scripts/styles.css"]
+      }
+    ],
+    "permissions": [
+      "activeTab"
+    ]
+  }
