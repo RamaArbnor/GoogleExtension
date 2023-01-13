@@ -1,8 +1,16 @@
 {
     "manifest_version": 3,
-    "name": "Blue Background",
-    "version": "0.1",
-    "description": "Changes all website backgrounds to blue",
+    "name": "SymboSearch",
+    "version": "0.1.1",
+    "description": "Integrate openai on every search you do!",
+
+    "icons": {
+      "16": "./images/ico.png",
+      "32": "./images/ico.png",
+      "48": "./images/ico.png",
+      "128": "./images/ico.png"
+    },
+
     "content_scripts": [
       {
         "matches": ["*://*/*"],
