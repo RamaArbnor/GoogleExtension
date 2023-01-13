@@ -4,15 +4,22 @@ const search = document.querySelector("input");
 let txt = search.value;
 
 const results = document.getElementById("result-stats")
+const searchRes = document.getElementById("search")
 
-const div = document.createElement('div');
+
+const div = document.createElement('pre');
+div.innerHTML = "Loading .. ."
+div.className = "snippet "
 
 
-div.innerText = txt;
-results.innerHTML = json
-document.body.appendChild(div);
+// const resultStats = document.getElementById("result-stats");
+// results.insertAdjacentHTML("afterend", "<p>Added with js</p>");
 
-div.className = "output"
+searchRes.prepend(div)
+
+// results.innerHTML = json
+
+
 
 // your code here
 function postReq() {
@@ -24,7 +31,8 @@ function postReq() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             json = JSON.parse(xhr.responseText);
             console.log(json);
-            results.innerHTML = json
+            // results.innerHTML = json
+            div.innerHTML = json.trim()
 
         }
     };

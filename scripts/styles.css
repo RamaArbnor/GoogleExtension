@@ -1,11 +1,27 @@
-.output {
-    font-size: 2rem;
-    background-color: aquamarine;
+.snippet {
+    width: 95%;
+    /* height: fit-content; */
 
-    color: white;
+    max-height: 200px;
 
-    position: absolute;
-    top: 100;
-    left: 0;
-    width: 100%;
+    /* overflow: scroll; */
+
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+    background-color: #272822;
+
+    overflow: auto;
+
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    line-height: 1.5;
+    tab-size: 4;
+    hyphens: none;
+
+    padding: 1rem;
+    margin: 1rem 0 !important;
+
 }
